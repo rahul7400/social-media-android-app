@@ -14,7 +14,7 @@ or you can say that an advance version of [Lapit chat app](https://github.com/yu
 # App Screenshots🎉
 
 
-<img src="images/image1.png" width="250"> <img src="images/image2.jpeg" width="250"> <img src="images/image3.jpeg" width="250"> <img src="images/image4.jpeg" width="250"> <img src="images/image5.jpeg" width="250"><img src="images/image6.jpeg" width="250"><img src="images/image7.jpeg" width="250"><img src="images/image8.jpeg" width="250">
+<img src="images/image1.png" width="250"> <img src="images/image2.jpg" width="250"> <img src="images/image3.jpg" width="250"> <img src="images/image4.jpg" width="250"> <img src="images/image5.jpg" width="250"><img src="images/image6.jpg" width="250"><img src="images/image7.jpg" width="250"><img src="images/image8.jpg" width="250">
 
 
 # Configure Firebase 👀
