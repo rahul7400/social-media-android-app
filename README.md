@@ -36,6 +36,29 @@ or you can say that an advance version of [Lapit chat app](https://github.com/yu
     <td><img src="images/image8.jpg" width="250"> </td>
   </tr>
  </table>
+ <table>
+  <tr>
+    <td>Groups page</td>
+    <td>Group chat page</td>
+    <td>Group chat options</td>
+  </tr>
+  <tr>
+    <td><img src="images/image4.jpg" width="250"> </td>
+    <td><img src="images/image5.jpg" width="250"> </td>
+    <td><img src="images/image6.jpg" width="250"> </td>
+  </tr>
+ </table>
+ 
+  <table>
+  <tr>
+    <td>Accounts page</td>
+    <td>Search Friend page</td>
+  </tr>
+  <tr>
+    <td><img src="images/image7.jpg" width="250"> </td>
+    <td><img src="images/image8.jpg" width="250"> </td>
+  </tr>
+ </table>
 
 
 # Configure Firebase 👀
