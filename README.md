@@ -1,19 +1,24 @@
-# Lapit---Android-Firebase-Chat-App
+# Knock knock - Firebase Messenger App 2018
+A messenger app is **any app that enables a private messaging function between two or more people**. With more and more messenger apps popping up every day, this type of technology is quickly becoming the most popular way to send text-based messages, replacing SMS and MMS as the preference of most consumers.
 
-## Warning
+This app was created in 2018 with the help of YouTube tutorials of [Akshay bhaiya](https://www.youtube.com/@TVACStudio/videos)
+After completion of the tutorial I manipulated major codes of the app and made it an advance version of the app with more facilities like group chat, profile picture change, wall picture, status etc. and also changed the whole UI of the app by learning from here and there.
+This was the first app of my life and this project helped me to learn full native android development.
 
-The Gradle file has been edited for security purpose. You need to include your own project's gradle Fields in "google services.json" file.
-Without that the app wont run.
+This app is purely based on firebase. So to use the app you have to enable **Firebase realtime database, Firebase Storage, Firebase Authentication - with email** .
 
-## Before you continue
+# Based on
+Lapit chat app - https://github.com/yudikarma/Lapit---Android-Firebase-Chat-App
+or you can say that an advance version of [Lapit chat app](https://github.com/yudikarma/Lapit---Android-Firebase-Chat-App)
 
-The App is Still work in progress so this may contain some errors. The source code will be updated along with the upcoming tutorials.
-As the project is based on a youtube tutorial series "Lapit Chat App".
+# Configure Firebase 👀
+- Create your own project on firebase. 
+- download google-services.json 
+- Place it in the app folder
+- Setup Realtime database in firebase and enable the database by setting true to read & write in the rules tab of relatime database.
+- Setup Storage in firebase and enable it by setting true to read and write in the rules of storage. 
+- Setup authentication in firebase and enable email/password authentication.
+- You are good to go.👌👌
 
-## Watch Lapit Chat App Tutorial Series
-
-[Watch the entire Lapit Chat App Series](https://www.youtube.com/playlist?list=PLGCjwl1RrtcQ3o2jmZtwu2wXEA4OIIq53)
-
-## Updates
-
-[ 8 Aug, 2017 ] - First Upload with Code of First 30 Tutorials
+# License
+Licensed under the [Apache Licence 2.0](LICENSE).
