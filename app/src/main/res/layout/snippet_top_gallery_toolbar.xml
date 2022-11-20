@@ -1,0 +1,65 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/app_bar_top">
+
+            <Toolbar
+                android:layout_width="match_parent"
+               app:layout_scrollFlags="scroll|enterAlways|snap"
+                android:layout_height="?android:attr/actionBarSize"
+                android:id="@+id/setting_toolbar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/gallery_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_close_purple_24dp" />
+
+                    <Spinner
+                       android:id="@+id/spinnerGallery"
+                       android:layout_width="wrap_content"
+                       android:layout_height="25dp"
+                       android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@id/gallery_close"
+                       android:layout_centerVertical="true">
+
+                   </Spinner>
+
+                <TextView
+                    android:id="@+id/gallery_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Next"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#009dff"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp" />
+
+                </RelativeLayout>
+
+            </Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+
+
+</merge>

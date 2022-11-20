@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cProfile"
+        android:layout_width="35dp"
+       android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_height="35dp"
+        android:src="@drawable/default_avatar"/>
+    <TextView
+        android:id="@+id/cUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:padding="10dp"
+        android:layout_marginLeft="-2dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nunito_bold"
+        />
+
+        <TextView
+            android:id="@+id/cTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:layout_marginLeft="-12dp"
+            android:textColor="#DFDFDF"
+            android:fontFamily="@font/nunito_bold"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/cText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:text="Description that user wants to write"
+        android:padding="10dp"
+        android:layout_marginTop="-25dp"
+        android:textColor="#BFE6DDDD"
+        android:fontFamily="@font/nunito_bold"
+        />
+</LinearLayout>

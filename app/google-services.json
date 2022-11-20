@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1011746444932",
+    "firebase_url": "https://knock-new-c81f6.firebaseio.com",
+    "project_id": "knock-new-c81f6",
+    "storage_bucket": "knock-new-c81f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011746444932:android:db79ad9f166e5c5c0654d1",
+        "android_client_info": {
+          "package_name": "in.macro.codes.Kncok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011746444932-jq3dvqv614vbpimhsjc87346buok8dqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhXd3vAzjkabmXWCoIG9nQ30ubDJYUMeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011746444932-jq3dvqv614vbpimhsjc87346buok8dqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

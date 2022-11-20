@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/background_sugg"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sugg_profile"
+        android:layout_width="75dp"
+        app:civ_border_width="0.2dp"
+        app:civ_border_color="#46000000"
+        android:layout_marginStart="36dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="6dp"
+
+        android:src="@drawable/default_avatar"/>
+
+    <TextView
+        android:id="@+id/sugg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/sugg_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textAlignment="center"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginTop="2dp"/>
+
+    <Button
+        android:id="@+id/sugg_add"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:background="@drawable/button_background2"
+        android:text="View Profile"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

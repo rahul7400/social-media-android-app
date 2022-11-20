@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardview"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#000000"
+        app:cardPreventCornerOverlap="false"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/postPreview"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/default_send_image"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+                android:id="@+id/liker"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_like_fill" />
+            <TextView
+                android:id="@+id/like_count"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/liker"
+                android:text="2340"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_centerVertical="true"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

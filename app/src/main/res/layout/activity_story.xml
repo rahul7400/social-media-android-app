@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Story.StoryActivity">
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/story_prg"/>
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:id="@+id/stories"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="22dp"
+        android:animateLayoutChanges="true"
+        android:elevation="12dp"
+        android:gravity="top"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stories"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:elevation="12dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/story_photo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_avatar"
+            app:civ_border_color="#4D000000"
+            app:civ_border_width="0.5dp" />
+
+        <TextView
+            android:id="@+id/story_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/story_photo"
+            android:animateLayoutChanges="true"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Username"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/story_username"
+            android:animateLayoutChanges="true"
+            android:fontFamily="@font/nunito_bold"
+            android:text="23h"
+            android:textColor="#D0FBF8F8"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="635dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="2dp"
+        android:elevation="4dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="10dp"
+
+        app:cardPreventCornerOverlap="false">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/story_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="19dp"
+               android:scaleType="fitXY"
+                app:srcCompat="@drawable/default_send_image" />
+
+
+           <VideoView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:elevation="20dp"
+               android:visibility="gone"
+               android:id="@+id/story_video"/>
+
+            <TextView
+                android:id="@+id/scaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="#35000000"
+                android:elevation="20dp"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/nunito_bold"
+                android:padding="10dp"
+
+
+                android:text="The java. lang. Thread. sleep(long millis, int nanos) method causes the currently executing thread to sleep for the specified number of milliseconds plus the specified number of nanoseconds, subject to the precision and accuracy of system timers and schedulers."
+                android:textColor="#C7FFFFFF"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/story_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="30dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="660dp"
+                android:id="@+id/view23"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/reverse"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+
+                <View
+                    android:id="@+id/skip"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view23"
+                android:background="#D9000000"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="28dp"
+                        android:layout_margin="15dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ic_like" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+                        android:layout_marginTop="14dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/comment2" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-12dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Liked by Ketley and 258 others "
+                    android:textColor="#F3E2E2"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:id="@+id/countComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="View all 20 comments"
+                    android:textColor="#C1D6D0D0"
+                    android:textSize="14dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/commentDisp"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/orange_round"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/commentProfile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/default_avatar"
+                        app:civ_border_color="#4D000000"
+                        app:civ_border_width="0.5dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom">
+
+                        <EditText
+                            android:id="@+id/addcomment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito_semibold"
+
+                            android:hint="Add a comment"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#ffffff"
+                            android:textSize="14dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/sendcomment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="3dp"
+                            android:backgroundTint="@null"
+                            android:src="@drawable/ic_send_white_24dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="15dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

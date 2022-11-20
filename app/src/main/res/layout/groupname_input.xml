@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/less_round"
+    android:padding="10dp">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your awesome\nGroup"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:visibility="visible"
+        android:textColor="#191919"
+        android:layout_marginStart="5dp"/>
+    <EditText
+        android:id="@+id/grp_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:drawableEnd="@drawable/user_icon"
+        android:drawableTint="#696969"
+        android:hint="Group's Name"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="#191919"
+        android:textColorHint="#696969"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/gerror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Enter a group name to continue"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="#D81E1E"
+        android:layout_marginEnd="50dp"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your \ngroup category"
+        android:textStyle="bold"
+        android:layout_marginTop="180dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:visibility="visible"
+        android:textColor="#191919"
+        android:layout_marginStart="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_marginTop="230dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+
+            <Button
+
+                android:id="@+id/art2"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:background="@drawable/background_sugg"
+                android:text="Art and Design"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/txt7"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+
+                android:id="@+id/buy2"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:background="@drawable/background_sugg"
+                android:text="Buy and Sell"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/txt7"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary" />
+
+
+            <Button
+
+                android:id="@+id/entertainment2"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:background="@drawable/background_sugg"
+                android:text="Entertainment"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/txt7"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary" />
+
+
+            <Button
+
+                android:id="@+id/technology2"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:background="@drawable/background_sugg"
+                android:text="Technology"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/txt7"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/business2"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:background="@drawable/background_sugg"
+                android:text="Business and Finance"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/txt7"
+
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+
+                android:id="@+id/education2"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:background="@drawable/background_sugg"
+                android:text="Education"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/txt7"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary" />
+            <Button
+
+                android:id="@+id/gaming2"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:background="@drawable/background_sugg"
+                android:text="Gamming Community"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/txt7"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/grp_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="50dp"
+
+        android:background="@drawable/button_login_background"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/grp_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginEnd="50dp"
+       android:layout_marginBottom="5dp"
+        android:background="@drawable/button_signin_background"
+        android:text="Dismiss"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

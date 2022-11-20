@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:id="@+id/main"
+    android:background="?attr/selectableItemBackground">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/guser_single_image"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/guser_single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignTop="@+id/guser_single_image"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/guser_single_image"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Rahul Gandhi"
+
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/guser_single_status"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/guser_single_name"
+        android:layout_alignStart="@+id/guser_single_name"
+        android:layout_marginStart="0dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginTop="-5dp"
+        android:textSize="14dp"
+        android:text="This is a demo status bro" />
+
+    <Button
+        android:id="@+id/admin_batch"
+        android:layout_width="80dp"
+        android:layout_height="34dp"
+        android:text="Send"
+        android:fontFamily="@font/nunito_bold"
+        android:background="@drawable/oround"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:textSize="10dp"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:padding="1dp"
+        android:layout_marginEnd="10dp"
+        />
+
+
+    <View
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="70dp"
+
+
+        android:layout_alignParentBottom="true"
+        android:background="#20000000" />
+
+
+</RelativeLayout>

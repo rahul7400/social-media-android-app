@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.macro.codes.Kncok">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:name=".LapitChat"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".QRCode.ScanQRActivity"></activity>
+        <activity android:name=".QRCode.qrcodeMainActivity" />
+        <activity android:name=".Groups.GroupImageEditActivity" />
+        <activity android:name=".SharePost.EditPost" />
+        <activity android:name=".Gallery.GalleryActivity" />
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".VideoUploadFinal" />
+        <activity android:name=".ImageUploadFinal" />
+
+        <service
+            android:name=".Service.StoryJob"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Service.Sviewer"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Story.EditStoryActivity" />
+        <activity android:name=".Story.AddStoryFinal" />
+        <activity
+            android:name=".Story.StoryActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".CurrentProfileActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".FriendSearchActivity" />
+        <activity
+            android:name=".FirstMainActivity"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Groups.GroupProfileActivity" />
+        <activity android:name=".Groups.GCover_Activity" />
+        <activity android:name=".Groups.GroupInviteActivity" />
+        <activity android:name=".Groups.GroupInfoActivity" />
+        <activity android:name=".Groups.GroupSettingsActivity" />
+        <activity android:name=".Incognito_chat_mode" />
+        <activity android:name=".Story.AddStoryActivity" />
+        <activity android:name=".Groups.GroupChatActivty" />
+        <activity android:name=".play_video" />
+        <activity android:name=".imageview_Activity" />
+        <activity android:name=".CoverActivity" />
+        <activity android:name=".StartActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".StatusActivity"
+            android:parentActivityName=".SettingsActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".UsersActivity"
+            android:parentActivityName=".FirstMainActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".FirstMainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+        <meta-data
+            android:name="cloudinary://452855876652171:GPFOlMKH9HrrLTFXSef-3dCgQhk@knock"
+            android:value="cloudinary://@knock" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

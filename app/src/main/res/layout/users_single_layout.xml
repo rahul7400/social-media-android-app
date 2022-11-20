@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:clickable="true"
+    android:id="@+id/main"
+    android:background="?attr/selectableItemBackground"
+    android:focusable="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_single_image"
+        android:layout_width="76dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+
+        android:elevation="10dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/user_single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@+id/user_single_image"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_toEndOf="@+id/user_single_image"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:visibility="visible"
+        android:id="@+id/msg_time"
+        android:textSize="12dp"
+        android:layout_marginRight="10dp"
+        android:text="7:30 AM" />
+
+    <TextView
+        android:id="@+id/user_single_status"
+        android:layout_width="264dp"
+        android:layout_height="19dp"
+        android:layout_below="@+id/user_single_name"
+        android:layout_alignStart="@+id/user_single_name"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="9dp"
+        android:layout_toStartOf="@+id/msg_count"
+        android:text=""
+        android:textSize="14dp" />
+    <TextView
+
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+       android:layout_below="@+id/msg_time"
+        android:visibility="gone"
+        android:id="@+id/msg_count"
+        android:textSize="12dp"
+        android:background="@drawable/circle"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:paddingTop="2dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:text="4" />
+
+    <ImageView
+        android:id="@+id/user_single_online_icon"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_single_image"
+        android:layout_toEndOf="@+id/user_single_image"
+        android:visibility="gone"
+       android:layout_marginStart="-10dp"
+        app:srcCompat="@drawable/online_icon" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="100dp"
+
+
+       android:layout_alignParentBottom="true"
+        android:background="#20000000" />
+
+    <Button
+        android:id="@+id/grp_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite"
+        android:fontFamily="@font/nunito_bold"
+        android:background="@drawable/oround"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:textSize="12dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:padding="1dp"
+        android:layout_marginEnd="5dp"
+        />
+
+</RelativeLayout>

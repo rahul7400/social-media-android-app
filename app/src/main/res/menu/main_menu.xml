@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_request"
+        android:icon="@drawable/add"
+        android:title="Add Friend"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/create_grp"
+        android:title="Create Group" />
+    <item
+    android:id="@+id/main_settings_btn"
+    android:title="Account Settings" />
+
+    <item
+        android:id="@+id/app_settings_btn"
+        android:title="App Settings" />
+
+<item
+    android:id="@+id/main_all_btn"
+    android:title="Suggestions" />
+<item
+    android:id="@+id/main_logout_btn"
+    android:title="@string/log_out" />
+
+
+
+
+</menu>
+

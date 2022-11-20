@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".GlobalStory.GlobalDiscover">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="700dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover"
+                android:fontFamily="@font/yellowtail"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:id="@+id/dis"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout16"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/dis"
+                android:layout_marginTop="5dp"
+                android:layout_height="52dp"
+                android:background="@drawable/orange_round">
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/search_icon"
+                    android:background="@null"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:hint="Search with username or email"
+                    android:textSize="13dp"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textNoSuggestions"
+                    android:padding="10dp"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#ffffff" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@android:style/Widget.ProgressBar.Large.Inverse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="19dp" />
+
+            </RelativeLayout>
+
+<TextView
+    android:layout_width="0dp"
+    android:id="@+id/temp"
+    android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/discover_memes"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout16"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover\nMemes"
+        android:textStyle="bold"
+        android:id="@+id/memes"
+        android:textSize="25dp"
+        android:textColor="#191919"
+        android:layout_marginStart="10dp"/>
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerview1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/discover_models"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/discover_memes"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover\nModels"
+            android:textStyle="bold"
+            android:id="@+id/action"
+            android:textSize="25dp"
+            android:textColor="#191919"
+            android:layout_marginStart="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/popular"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/discover_models"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular"
+                    android:textStyle="bold"
+                    android:id="@+id/popularT"
+                    android:textSize="25dp"
+                    android:textColor="#191919"
+                    android:layout_marginStart="10dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/settings_pro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:transitionName="profile"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/settings_name"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:transitionName="uname"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_below="@+id/settings_profile"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:transitionName="ustatus"
+        android:layout_below="@+id/settings_name"
+        android:layout_alignStart="@+id/settings_name"
+        android:layout_marginStart="10dp"
+        android:maxWidth="140dp"
+        android:textColor="#989696"
+        android:textAlignment="center"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginTop="3dp"
+        android:textSize="14dp"
+        android:text="User status" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/settings_status"
+        android:background="#20000000" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/settings_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:overScrollMode="never"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text=" "
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:textSize="20dp"
+        android:textColor="#191919"
+        android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

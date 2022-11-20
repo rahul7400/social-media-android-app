@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Story.EditStoryActivity">
+
+    <Button
+        android:id="@+id/nxt_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_signin_background"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="Next"
+        android:layout_alignParentBottom="true"/>
+
+
+    <RelativeLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="20dp"
+        android:visibility="gone"
+        android:background="#69000000">
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="30dp"
+            android:hint="Enter here"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+          />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_story"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="635dp">
+
+        <RelativeLayout
+            android:id="@+id/attach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF">
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/test_img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/testImage"
+                app:srcCompat="@drawable/default_send_image"/>
+
+        <VideoView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:id="@+id/VideoView" />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

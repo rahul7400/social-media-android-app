@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Story.AddStoryFinal">
+    <include
+        android:id="@+id/status_appBar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/status_appBar"
+        android:id="@+id/story_scroll_view"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+        android:id="@+id/s_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_story"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/default_avatar"/>
+
+
+            <EditText
+                android:id="@+id/caption"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="11dp"
+                android:layout_toStartOf="@+id/cardview"
+                android:layout_toEndOf="@+id/profile_story"
+                android:background="@null"
+                android:fontFamily="@font/nunito_semibold"
+                android:hint="Add a caption"
+                android:padding="10dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textSize="16dp" />
+            
+            <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+            android:id="@+id/cardview"
+                android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#000000"
+            app:cardPreventCornerOverlap="false"
+            android:elevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/try_cap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#D2F3EDED"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="4dp"
+                    android:background="#26000000"
+                    android:elevation="20dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:padding="10dp"
+                    android:layout_marginBottom="25dp"
+                    />
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/preview"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/default_send_image"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+            <Button
+                android:id="@+id/story_next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/s_lay"
+                android:background="@drawable/button_signin_background"
+                android:text="Post"
+                android:textAllCaps="false"
+
+                android:layout_margin="25dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/story_next"
+                android:id="@+id/view_set"
+                android:layout_margin="15dp"
+                android:background="#29000000"/>
+
+            <TextView
+                android:id="@+id/txte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Review your story settings"
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_below="@+id/view_set"
+                android:textColor="#191919"
+                android:layout_marginStart="15dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txte"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="90dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/guser_single_image2"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="15dp"
+
+
+
+                        android:src="@drawable/global" />
+
+                    <TextView
+                        android:id="@+id/guser_single_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignTop="@+id/guser_single_image2"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/guser_single_image2"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Your Story"
+                        android:layout_marginTop="-6dp"
+
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_below="@+id/guser_single_name2"
+                        android:layout_alignStart="@+id/guser_single_name2"
+                        android:layout_marginStart="0dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:layout_marginTop="-5dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Share your story only with \nyour friends" />
+
+
+                    <Button
+                        android:id="@+id/globaleShare2"
+                        android:layout_width="80dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/oround"
+                        android:fontFamily="@font/nunito_bold"
+                        android:padding="1dp"
+                        android:text="Selected"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10dp"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#20000000" />
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:visibility="gone"
+                android:layout_height="90dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/guser_single_image"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="15dp"
+
+
+
+                    android:src="@drawable/global" />
+
+                <TextView
+                    android:id="@+id/guser_single_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_alignTop="@+id/guser_single_image"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@+id/guser_single_image"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Global Story"
+                    android:layout_marginTop="5dp"
+
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/guser_single_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_below="@+id/guser_single_name"
+                    android:layout_alignStart="@+id/guser_single_name"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_marginTop="-5dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Share your story globally" />
+
+
+                <Button
+                    android:id="@+id/globaleShare"
+                    android:layout_width="80dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+
+
+                    android:layout_marginRight="10dp"
+
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/oround"
+
+                    android:fontFamily="@font/nunito_bold"
+                    android:padding="1dp"
+                    android:text="Selected"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10dp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#20000000" />
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/puser_single_image"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="15dp"
+
+
+
+                        android:src="@drawable/global" />
+
+                    <TextView
+                        android:id="@+id/puser_single_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignTop="@+id/puser_single_image"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toEndOf="@+id/puser_single_image"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Save As Post"
+
+                        android:layout_marginTop="-6dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/puser_single_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_below="@+id/puser_single_name"
+                        android:layout_alignStart="@+id/puser_single_name"
+                        android:layout_marginStart="0dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:layout_marginTop="-5dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="This story will be shown as \npost in your profile " />
+
+
+                    <Button
+                        android:id="@+id/pglobaleShare"
+                        android:layout_width="80dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginEnd="10dp"
+
+
+                        android:layout_marginRight="10dp"
+
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/oround"
+
+                        android:fontFamily="@font/nunito_bold"
+                        android:padding="1dp"
+                        android:text="Selected"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10dp"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#20000000" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messages"
+
+                android:layout_margin="15dp"
+                android:textStyle="bold"
+
+                android:textSize="18dp"
+                android:layout_below="@+id/l1"
+                android:textColor="#191919"
+                android:layout_marginStart="15dp"/>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/story_friends"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:overScrollMode="never"
+                android:layout_below="@+id/txtd"
+                android:layout_alignParentStart="true"/>
+
+            <View
+                android:layout_width="0dp"
+                android:id="@+id/view_ran"
+                android:layout_height="100dp"
+                android:layout_below="@+id/story_friends"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Macrocodes"
+                android:textAlignment="center"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_below="@+id/view_ran"
+              />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

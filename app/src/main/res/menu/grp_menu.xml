@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/grp_info"
+        android:title="Invite Friends" />
+    <item android:title="All Media" />
+    <item android:title="Wallpaper" />
+    <item
+        android:id="@+id/grp_set"
+        android:title="Group Settings" />
+
+    <item android:title="Report and Leave" />
+
+</menu>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    android:background="#60D8D4D4"
+    tools:context="in.macro.codes.Kncok.ChatActivity">
+
+    <include
+        android:id="@+id/chat_app_bar"
+        layout="@layout/app_bar_layout"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/chat_app_bar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@+id/chat_app_bar"
+            android:layout_alignParentStart="true">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginStart="5dp"
+
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@+id/chat_send_btn"
+        android:background="@drawable/round"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/chat_add_btn"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/round"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_baseline_attach_file_24" />
+
+        <com.vanniktech.emoji.EmojiEditText
+            android:id="@+id/chat_message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:fontFamily="@font/nunito_semibold"
+            android:hint="Enter Message..."
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:maxLines="4"
+            android:paddingLeft="10dp"
+            android:paddingTop="14dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="12dp" />
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round"
+            android:id="@+id/emojiMenu"
+
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_tag_faces_24"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/chat_send_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/orange_round"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/ic_send_white_24dp" />
+
+    <RelativeLayout
+        android:id="@+id/close_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/background"
+        android:layout_marginBottom="200dp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/background"
+        android:animateLayoutChanges="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:background="@drawable/bg_chatactivity"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/bg_linear1"
+
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/camera"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/camera720"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gallery"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/gallery720"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/video"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/video720"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/bg_linear2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/audio"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/audio720"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/document"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/files720"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/microphone"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/mic720"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

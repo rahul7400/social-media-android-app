@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="image_width">110dp</dimen>
+        <dimen name="image_small_width">18dp</dimen>
+
+</resources>

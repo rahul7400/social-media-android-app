@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="in.macro.codes.Kncok.StartActivity">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to Knock  Knock "
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/indiaLove"
+        android:text="Made with ❤\tin India"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/welcome_text"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:fontFamily="@font/nunito_bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/start_login_btn"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/indiaLove"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/start" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="@string/need_a_new_account"
+        android:textColor="@color/colorPrimary" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/start_reg_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/orange_round2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="ALREADY HAVE ACCOUNT"
+        android:textColor="@android:color/white" />
+
+
+
+</RelativeLayout>

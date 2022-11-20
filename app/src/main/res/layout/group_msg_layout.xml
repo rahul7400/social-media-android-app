@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/gmessage_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="@drawable/white_round_grp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/gdisp_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/gmessage_profile_layout"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/default_avatar" />
+
+            <TextView
+                android:id="@+id/guser_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="15dp"
+                android:layout_marginEnd="2dp"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_marginStart="9dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="#11858282"/>
+
+        <TextView
+            android:id="@+id/gmessage_recieving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toEndOf="@+id/gmessage_profile_layout"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:autoLink="all"
+            android:maxWidth="272dp"
+            android:textColorLink="#EDFF5722"
+            android:text="Message Text"
+            android:textColor="#444444"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gmessage_text_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        android:background="@drawable/white_round_grp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/default_avatar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginLeft="8dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+
+            android:background="#11858282"/>
+        <TextView
+            android:id="@+id/gmessage_recieving3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toEndOf="@+id/gmessage_profile_layout"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:autoLink="all"
+            android:maxWidth="272dp"
+            android:textColorLink="#EDFF5722"
+            android:text="Message Text"
+            android:textColor="#444444"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/gmessage_image_layout"
+        android:layout_width="272dp"
+        android:layout_height="206dp"
+        android:background="@drawable/white_round"
+        android:padding="6dp"
+        android:visibility="visible">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+
+                app:cardBackgroundColor="#ffffff"
+                app:cardPreventCornerOverlap="false"
+                android:layout_margin="1dp"
+                android:elevation="10dp">
+            <ImageView
+                android:id="@+id/gimage"
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                android:layout_marginStart="1dp"
+                android:maxWidth="272dp"
+                app:srcCompat="@drawable/verifing"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/gimage_video"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:maxWidth="272dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/video"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/gnot_downloaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/purple_round"
+                android:fontFamily="@font/nunito_semibold"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+
+                android:layout_gravity="right"
+                android:text="File not Downloaded"
+                android:textColor="#fff"
+                android:visibility="visible" />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gmessage_image_layout3"
+        android:layout_width="match_parent"
+        android:background="@drawable/white_round"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/default_avatar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginLeft="8dp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/gimage3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/verifing"
+                android:adjustViewBounds="true"
+                android:maxHeight="400dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/big_heart_on"
+                android:animateLayoutChanges="true"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                app:srcCompat="@drawable/heart_on"
+                android:visibility="visible"
+                android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:maxWidth="272dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/video"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_below="@+id/gimage3"
+                android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/heart_off"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="5dp"
+                app:srcCompat="@drawable/heart_off"
+                android:layout_marginTop="10dp" />
+            <ImageView
+                android:id="@+id/heart_on"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                app:srcCompat="@drawable/heart_on"
+                android:visibility="gone"
+                android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/purple_round"
+                android:fontFamily="@font/nunito_semibold"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:text="File not Downloaded"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/gmessage_text_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/purple_round2"
+        android:text="Message Text"
+        android:textColor="#ffffff"
+        android:maxWidth="272dp"
+
+        android:autoLink="all"
+        android:textColorLink="#FDE92F"
+        android:visibility="gone"
+        android:fontFamily="@font/nunito_semibold"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/gmessage_image_layout2"
+        android:layout_width="272dp"
+        android:layout_height="206dp"
+        android:background="@drawable/purple_round"
+        android:layout_marginLeft="80dp"
+        android:gravity="end"
+        android:padding="6dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardPreventCornerOverlap="false"
+                android:layout_margin="1dp"
+                android:elevation="10dp">
+            <ImageView
+                android:id="@+id/gimage2"
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                android:layout_gravity="center"
+                android:maxWidth="272dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/verifing"
+                android:visibility="visible" />
+
+
+
+
+            <ImageView
+                android:id="@+id/gimage2_video"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:maxWidth="272dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/video"
+                android:visibility="gone" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

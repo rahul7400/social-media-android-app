@@ -1,0 +1,147 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "in.macro.codes.Kncok"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        packagingOptions {
+            exclude 'META-INF/rxjava.properties'
+            exclude 'maven.properties'
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+
+            }
+        }
+        renderscriptTargetApi 29
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility = 1.8
+        sourceCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.3.0-alpha01'
+
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    implementation "androidx.fragment:fragment:1.0.0"
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.preference:preference:1.1.0-rc01'
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+    implementation 'com.google.firebase:firebase-firestore:21.4.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.shts:StoriesProgressView:3.0.0'
+
+
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.7'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.firebaseui:firebase-ui-database:2.3.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.5'
+    implementation 'com.google.firebase:firebase-core:17.3.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.github.khizar1556.MKVideoPlayer:mkvideoplayer:0.1.5'
+    implementation 'com.github.shts:StoriesProgressView:3.0.0'
+
+
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    implementation 'me.riddhimanadib.bottom-nav-bar:bottom-nav-bar:1.0.1'
+
+
+    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+
+
+    implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
+    // implementation 'com.airbnb.android:lottie:3.0.7'
+    implementation 'com.valdesekamdem.library:md-toast:0.9.0'
+
+
+
+    // Recommended: Add the Firebase SDK for Google Analytics.
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+
+    implementation 'id.zelory:compressor:2.0.0'
+
+    implementation 'com.google.firebase:firebase-perf:19.0.5'
+    implementation 'androidx.palette:palette:1.0.0'
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.8.3'
+
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.2.3'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
+    repositories {
+
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases" }
+
+    }
+    implementation 'com.github.pedromassango:doubleClick:3.0'
+
+    dependencies {
+        implementation 'com.github.captain-miao:optroundcardview:1.0.0'
+    }
+
+
+
+    annotationProcessor 'com.google.auto.value:auto-value:1.5.2'
+
+    implementation 'com.fasterxml:aalto-xml:1.0.0'
+    // https://mvnrepository.com/artifact/javax.xml.stream/stax-api
+    implementation group: 'javax.xml.stream', name: 'stax-api', version: '1.0-2'
+
+    implementation 'com.google.android.gms:play-services-ads:19.1.0'
+
+    //Scrolling video view
+    //emoji
+    // JAX-B dependencies for JDK 9+
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
+    implementation 'com.vanniktech:emoji-google:0.6.0'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+}
+
+
+apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'com.google.gms.google-services'
+
+//https://github.com/varunest/SparkButton   USE this for button animation
+

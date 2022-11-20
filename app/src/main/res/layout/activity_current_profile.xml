@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentProfileActivity">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/story_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="25dp"
+
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/p_profile"
+        android:layout_width="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="120dp"
+        android:layout_marginTop="180dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        android:elevation="3dp"
+        android:transitionName="profile"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/default_avatar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardPreventCornerOverlap="false"
+        android:layout_margin="3dp">
+    <ImageView
+        android:id="@+id/p_cover"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/default_send_image" />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/p_name"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:transitionName="uname"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_below="@+id/p_profile"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+
+
+    <TextView
+        android:id="@+id/p_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:transitionName="ustatus"
+        android:layout_below="@+id/p_profile"
+        android:layout_alignStart="@+id/p_name"
+        android:maxWidth="140dp"
+        android:layout_marginStart="0dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:text="User status" />
+
+
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Groups.GroupUsersListFrag">
+
+ <TextView
+     android:id="@+id/tb"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="8dp"
+     android:text="Group Members"
+     android:textAlignment="center"
+     android:fontFamily="@font/nunito_bold"
+     android:textColor="#ffffff"
+     android:textSize="18sp" />
+
+<LinearLayout
+    android:id="@+id/grp_locked"
+    android:layout_width="match_parent"
+    android:layout_marginTop="90dp"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+ <ImageView
+     android:id="@+id/lock"
+     android:layout_width="match_parent"
+     android:layout_height="100dp"
+    android:layout_centerHorizontal="true"
+     app:srcCompat="@drawable/lock2"/>
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Content is locked as \nYou are not a member of this group"
+     android:fontFamily="@font/nunito_bold"
+     android:layout_below="@+id/lock"
+     android:textAlignment="center"
+     android:textColor="#ffffff"/>
+
+</LinearLayout>
+
+ <androidx.recyclerview.widget.RecyclerView
+     android:id="@+id/grp_ulist"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@+id/tb"
+     android:overScrollMode="never"
+     android:layout_marginTop="14dp"
+
+     android:layout_alignParentStart="true">
+
+ </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

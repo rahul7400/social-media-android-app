@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@android:color/transparent">
+
+    <Button
+        android:id="@+id/make_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Admin"
+        android:textColor="@color/colorAccent"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/nunito_bold"/>
+    <Button
+        android:id="@+id/view_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Profile"
+        android:textColor="@color/colorAccent"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/nunito_bold"/>
+    <Button
+        android:id="@+id/add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Friend"
+        android:textColor="@color/colorAccent"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/nunito_bold"/>
+
+    <Button
+        android:id="@+id/kick_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kick User"
+
+        android:textColor="@color/colorAccent"
+        android:background="?attr/selectableItemBackground"
+        android:fontFamily="@font/nunito_bold"/>
+</LinearLayout>

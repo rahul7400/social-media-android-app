@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- create the stroke for top, left, bottom and right with the dp you want -->
+    <item>
+        <shape android:shape="oval" >
+            <!-- fill the inside in the color you want (could also be a gradient again if you want to, just change solid to gradient and enter angle, start, maybe center, and end color) -->
+            <solid android:color="@color/colorPrimary" />
+        </shape>
+    </item>
+
+</layer-list>

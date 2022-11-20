@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Groups.GroupFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Group Categories\nwhich you may like"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:textColor="#191919"
+        android:layout_marginStart="5dp"/>
+
+ <LinearLayout
+     android:id="@+id/cat_main_layout"
+     android:layout_width="match_parent"
+     android:orientation="horizontal"
+     android:visibility="gone"
+     android:layout_marginTop="10dp"
+     android:layout_height="wrap_content">
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:layout_marginLeft="45dp"
+         android:orientation="vertical">
+
+
+     <Button
+
+         android:id="@+id/art"
+         android:layout_width="120dp"
+         android:layout_height="44dp"
+         android:background="@drawable/background_sugg"
+         android:text="Art and Design"
+         android:layout_marginStart="8dp"
+         android:layout_below="@+id/txt7"
+         android:textSize="12dp"
+         android:layout_marginTop="20dp"
+         android:textColor="@color/colorPrimary" />
+
+     <Button
+
+         android:id="@+id/buy"
+         android:layout_width="120dp"
+         android:layout_height="44dp"
+         android:background="@drawable/background_sugg"
+         android:text="Buy and Sell"
+         android:layout_marginStart="8dp"
+         android:layout_below="@+id/txt7"
+         android:textSize="12dp"
+         android:layout_marginTop="20dp"
+         android:textColor="@color/colorPrimary" />
+
+
+     <Button
+
+         android:id="@+id/entertainment"
+         android:layout_width="120dp"
+         android:layout_height="44dp"
+         android:background="@drawable/background_sugg"
+         android:text="Entertainment"
+         android:layout_marginStart="8dp"
+         android:layout_below="@+id/txt7"
+         android:textSize="12dp"
+         android:layout_marginTop="20dp"
+         android:textColor="@color/colorPrimary" />
+
+
+     <Button
+
+         android:id="@+id/technology"
+         android:layout_width="120dp"
+         android:layout_height="44dp"
+         android:background="@drawable/background_sugg"
+         android:text="Technology"
+         android:layout_marginStart="8dp"
+         android:layout_below="@+id/txt7"
+         android:textSize="12dp"
+         android:layout_marginTop="20dp"
+         android:textColor="@color/colorPrimary" />
+     </LinearLayout>
+
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+
+         <Button
+             android:id="@+id/business"
+             android:layout_width="120dp"
+             android:layout_height="44dp"
+             android:background="@drawable/background_sugg"
+             android:text="Business and Finance"
+             android:layout_marginStart="8dp"
+             android:layout_below="@+id/txt7"
+
+             android:textSize="12dp"
+             android:layout_marginTop="20dp"
+             android:textColor="@color/colorPrimary" />
+
+         <Button
+
+             android:id="@+id/education"
+             android:layout_width="120dp"
+             android:layout_height="44dp"
+             android:background="@drawable/background_sugg"
+             android:text="Education"
+             android:layout_marginStart="8dp"
+             android:layout_below="@+id/txt7"
+             android:textSize="12dp"
+             android:layout_marginTop="20dp"
+             android:textColor="@color/colorPrimary" />
+         <Button
+
+             android:id="@+id/gaming"
+             android:layout_width="120dp"
+             android:layout_height="44dp"
+             android:background="@drawable/background_sugg"
+             android:text="Gamming Community"
+             android:layout_marginStart="8dp"
+             android:layout_below="@+id/txt7"
+             android:textSize="12dp"
+             android:layout_marginTop="20dp"
+             android:textColor="@color/colorPrimary" />
+     </LinearLayout>
+
+ </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/button_login_background"
+        android:text="Submit"
+        android:layout_margin="50dp"
+        android:layout_below="@+id/txt7"
+        android:textSize="12dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groups_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggested for You"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#191919"
+        android:layout_marginStart="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/suggestion_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
