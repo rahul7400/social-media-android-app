@@ -17,27 +17,27 @@ or you can say that an advance version of [Lapit chat app](https://github.com/yu
 <table>
   <tr>
     <td>First Screen Page</td>
-     <td>Holiday Mention</td>
-     <td>Present day in purple and selected day in pink</td>
+     <td>Creating groups</td>
+     <td>Profile page</td>
+   
+    <td>Groups page</td>
+    <td>Group chat page</td>
+    <td>Group chat options</td>
+    <td>Accounts page</td>
+    <td>Search Friend page</td>
   </tr>
   <tr>
     <td><img src="images/image1.png" width="250"> </td>
     <td><img src="images/image2.jpg" width="250"> </td>
     <td><img src="images/image3.jpg" width="250"> </td>
+    
+    <td><img src="images/image4.jpg" width="250"> </td>
+    <td><img src="images/image5.jpg" width="250"> </td>
+    <td><img src="images/image6.jpg" width="250"> </td>
+    <td><img src="images/image7.jpg" width="250"> </td>
+    <td><img src="images/image8.jpg" width="250"> </td>
   </tr>
  </table>
-
-
-<img src="images/image1.png" width="250">            <img src="images/image2.jpg" width="250"> 
-
-
-<img src="images/image3.jpg" width="250">            <img src="images/image4.jpg" width="250">
-
-
-<img src="images/image5.jpg" width="250">            <img src="images/image6.jpg" width="250">
-
-
-<img src="images/image7.jpg" width="250">            <img src="images/image8.jpg" width="250">
 
 
 # Configure Firebase 👀
