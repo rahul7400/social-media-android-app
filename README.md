@@ -14,6 +14,20 @@ or you can say that an advance version of [Lapit chat app](https://github.com/yu
 # App Screenshots🎉
 
 
+<table>
+  <tr>
+    <td>First Screen Page</td>
+     <td>Holiday Mention</td>
+     <td>Present day in purple and selected day in pink</td>
+  </tr>
+  <tr>
+    <td><img src="images/image1.png" width="250"> </td>
+    <td><img src="images/image2.jpg" width="250"> </td>
+    <td><img src="images/image3.jpg" width="250"> </td>
+  </tr>
+ </table>
+
+
 <img src="images/image1.png" width="250">            <img src="images/image2.jpg" width="250"> 
 
 
